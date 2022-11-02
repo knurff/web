@@ -1,0 +1,240 @@
+header h1 {
+    text-align: center;
+}
+
+header {
+    margin: 20px 1%;
+    border-radius: 2em;
+    border: 1px solid black;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+}
+
+.other {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.other a {
+    margin: 0 2%;
+}
+
+nav > * {
+    margin: 0.3em;
+}
+
+nav a:hover {
+    color: blueviolet;
+}
+
+.logo {
+    margin-left: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main > * {
+    border-radius: 2em;
+    border: 1px solid black;
+    margin: 1%;
+    width: 100%;
+}
+
+aside {
+    width: 30%;
+    padding: 1%;
+    font-size: 150%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+
+}
+
+.items {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.icons {
+    margin: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icons > * {
+    font-size: 160%;
+}
+
+.img {
+    width: 30%;
+    height: 30%;
+    padding: 1%;
+}
+
+.img img {
+    box-shadow: 10px 5px 5px blueviolet;
+    width: 80%;
+    height: 100%;
+    border-radius: 0.5em;
+    transition: 0.5s;
+
+}
+
+.img img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: blueviolet;
+    color: black;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 0 1%;
+    padding: 1.5%;
+    border-radius: 2em;
+}
+
+footer p {
+    font-size: 120%;
+}
+
+footer * {
+    padding: 0;
+    margin: 0;
+}
+
+.list ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    table {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        flex-direction: column;
+    }
+
+    main > * {
+        width: 95%;
+    }
+
+    section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .items {
+        width: 100%;
+    }
+
+    aside {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        display: block;
+        height: 100px;
+        margin: 0;
+        overflow-y: scroll;
+    }
+}
+
+table {
+    margin: 2%;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid blueviolet;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+
+ul i {
+    color: black;
+}
