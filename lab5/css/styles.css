@@ -1,0 +1,87 @@
+textarea {
+    width: 50%;
+    height: 100px;
+    background-color:wheat;
+    border: none;
+}
+body{
+    background-color: wheat;
+    width: 100%;
+    height: 100%;
+    
+    padding: 0;
+    margin: 0;
+}
+html {
+    width: 100%;
+    height: 100%;;
+}
+.task-1, .task-2, .task-3, .task-4{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.task-1{
+    padding: 2%;
+}
+.task-1 p{
+    font-weight: bold;
+}
+.task-1 input{
+    width: 40px;
+}
+.task-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task-2 > * {
+    margin: 1%;
+}
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100px;
+}
+.list > *{
+    border: none;
+    margin: 0 1%;
+    max-height: 100px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.list > *:hover{
+    transform: scale(1.2);
+}
+.list img{
+    background-size: 100%;
+    width: 150px;
+    height: 100px;
+}
+.img{
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+}
+
+.task-3{
+    padding: 1%;
+}
+
+.task-4{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.task-4 > * {
+    margin: 1%;
+    width: 200px;
+}
+.task-4 > button{
+    border-radius:1em;
+    background-color: wheat;
+    border: none;
+    padding: 10px 0;
+}
